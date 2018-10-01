@@ -1,0 +1,325 @@
+extends _template
+
+block main
+	// service_part start
+	section#service_part.service_part
+		.container
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.section_heading
+						h2
+							| my 
+							span services
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, obcaecati! ipsum dolor sit amet, consectetur.
+			.row
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-laptop
+							h2 web design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-mobile-alt
+							h2 Responsive Design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-camera
+							h2 Photography
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-pencil-alt
+							h2 Creative Design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-share-alt
+							h2 Social Media
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+				.col-lg-4.col-md-6.text-center.br
+					.services_item_two
+						.icon
+							i.fas.fa-life-ring
+							h2 Support
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus est vero culpa obcaecati animi!
+	// service_part end
+	// hire part start
+	section.hire_part
+		.overlay_hire
+		.container
+			.hire_text.text-center
+				h3 Hire me for your next project
+				.hire_button
+					a.button(href="#") hire me
+	// hire part end
+	// portfolio par start
+	section#portfolio_part.portfolio_part
+		.container
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.section_heading
+						h2
+							| my recent 
+							span works
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, obcaecati! ipsum dolor sit amet, consectetur.
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.port_menu
+						ul
+							li.port_active(data-filter="all") All
+							li(data-filter="1") Brand
+							li(data-filter="2") Web
+							li(data-filter="3") Graphic
+			.row
+				.filtr-container
+					.col-lg-4.col-md-6.filtr-item(data-category="all")
+						.portfolio_item
+							span
+							img(src="images/work(1).jpg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(1).jpg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+					.col-lg-4.col-md-6.filtr-item(data-category="1")
+						.portfolio_item
+							span
+							img(src="images/work(1).jpeg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(1).jpeg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+					.col-lg-4.col-md-6.filtr-item(data-category="1")
+						.portfolio_item
+							span
+							img(src="images/work(2).jpeg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(2).jpeg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+					.col-lg-4.col-md-6.filtr-item(data-category="2")
+						.portfolio_item
+							span
+							img(src="images/work(3).jpg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(3).jpg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+					.col-lg-4.col-md-6.filtr-item(data-category="2")
+						.portfolio_item
+							span
+							img(src="images/work(3).jpeg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(3).jpeg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+					.col-lg-4.col-md-6.filtr-item(data-category="3")
+						.portfolio_item
+							span
+							img(src="images/work(2).jpg" alt="image")
+							.port_overlay
+								.port_over_text
+									h2 Web Design
+									.port_over_icon
+										a(href="images/work(2).jpg" data-lightbox="image-1" data-title="My caption")
+											i.fas.fa-link
+	// portfolio par end
+	// counter part start
+	section.counter_part
+		.container
+			.row
+				.col-lg-3.col-md-3.text-center
+					.counter_text
+						i.fas.fa-thumbs-up
+						p.counter 45
+						h2 projects completed
+				.col-lg-3.col-md-3.text-center
+					.counter_text
+						i.fas.fa-users
+						p.counter 30
+						h2 Satisfaction clients
+				.col-lg-3.col-md-3.text-center
+					.counter_text
+						i.fas.fa-trophy
+						p.counter 12
+						h2 awrads won
+				.col-lg-3.col-md-3.text-center
+					.counter_text
+						i.fas.fa-briefcase
+						p.counter 6
+						h2 years of experience
+	// counter part end
+	// eduaction part start
+	section#education_part.education_part
+		.container
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.section_heading
+						h2
+							| education 
+							span & experience
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, obcaecati! ipsum dolor sit amet, consectetur.
+			.edu_slider
+				div
+					.row.align-items-center
+						.col-lg-5.text-right
+							.edu_text_one
+								h3 2012-2014
+								h4 Studied at secondery school
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis sequi doloremque ut totam natus eaque quibusdam! Minus, soluta, explicabo.
+						.col-lg-2
+						.col-lg-5
+				div
+					.row.align-items-center
+						.col-lg-5
+						.col-lg-2
+						.col-lg-5
+							.edu_text_two
+								h3 2014-2016
+								h4 Studied at higher secondery school
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis sequi doloremque ut totam natus eaque quibusdam! Minus, soluta, explicabo.
+				div
+					.row.align-items-center
+						.col-lg-5.text-right
+							.edu_text_one
+								h3 2016-2018
+								h4 web design
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis sequi doloremque ut totam natus eaque quibusdam! Minus, soluta, explicabo.
+						.col-lg-2
+						.col-lg-5
+				div
+					.row.align-items-center
+						.col-lg-5
+						.col-lg-2
+						.col-lg-5
+							.edu_text_two
+								h3 2016-2018
+								h4 uI/UX design
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nobis sequi doloremque ut totam natus eaque quibusdam! Minus, soluta, explicabo.
+	// eduaction part end
+	// testimonial part start
+	section#testimonial_part.testimonial_part
+		.test_overlay
+		.container
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.test_head_text
+						h2 testimonial
+					.test_slider
+						.text_test_slider
+							.test_image
+								img(src="images/team_1.jpg" alt="image")
+							.img_text
+								h2 mr jhon doe
+								p creative director
+							.test_text
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quibusdam fuga vitae quaerat, magnam maiores sapiente officia hic culpa praesentium enim! Nesciunt nemo blanditiis maiores ipsam eius quibusdam quae.
+							.rate_icon
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star-half
+						.text_test_slider
+							.test_image
+								img(src="images/team_3.jpg" alt="image")
+							.img_text
+								h2 jhon williams
+								p web developer
+							.test_text
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quibusdam fuga vitae quaerat, magnam maiores sapiente officia hic culpa praesentium enim! Nesciunt nemo blanditiis maiores ipsam eius quibusdam quae.
+							.rate_icon
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star-half
+						.text_test_slider
+							.test_image
+								img(src="images/team_2.jpg" alt="image")
+							.img_text
+								h2 marlen ramon
+								p creative manager
+							.test_text
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit itaque quibusdam fuga vitae quaerat, magnam maiores sapiente officia hic culpa praesentium enim! Nesciunt nemo blanditiis maiores ipsam eius quibusdam quae.
+							.rate_icon
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+								i.fas.fa-star
+	// testimonial part end
+	// blog part start
+	section#blog_part.blog_part
+		.container
+			.row.justify-content-center
+				.col-lg-8.text-center
+					.section_heading
+						h2
+							| recent 
+							span blog
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, obcaecati! ipsum dolor sit amet, consectetur.
+			.row
+				.col-lg-4.col-md-6.blog
+					.blog_inner
+						.blog_image
+							img(src="images/blog(1).jpg" alt="image")
+						.blog_text
+							h6 july 04, 2018 - williams
+							h2 The best web design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo incidunt voluptatem, officia laudantium voluptatibus reprehenderit fuga, quasi dolor.
+							a.button(href="#") Read more
+				.col-lg-4.col-md-6.blog
+					.blog_inner
+						.blog_image
+							img(src="images/blog(2).jpg" alt="image")
+						.blog_text
+							h6 july 04, 2018 - williams
+							h2 The best web design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo incidunt voluptatem, officia laudantium voluptatibus reprehenderit fuga, quasi dolor.
+							a.button(href="#") Read more
+				.col-lg-4.col-md-6.blog
+					.blog_inner
+						.blog_image
+							img(src="images/blog(3).jpg" alt="image")
+						.blog_text
+							h6 july 04, 2018 - williams
+							h2 The best web design
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo incidunt voluptatem, officia laudantium voluptatibus reprehenderit fuga, quasi dolor.
+							a.button(href="#") Read more
+	// blog part end
